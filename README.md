@@ -111,7 +111,7 @@ Follow these steps to set up the project on your local machine.
 
 ## Prerequisites
 
-- **Python 3.8+** - Ensure you have Python 3.8 or higher installed
+- **Python 3.11** - Ensure you have Python 3.11
 - **pip** - Package installer for Python
 
 ## Step 1: Clone the Repository
@@ -135,7 +135,7 @@ source venv/bin/activate
 ### On Windows:
 
 ```bash
-python -m venv venv
+python3 -m venv venv
 venv\Scripts\activate
 ```
 
@@ -152,7 +152,7 @@ pip install -r src/requirements.txt
 Start the Streamlit application:
 
 ```bash
-streamlit run streamlit_app.py
+streamlit run src/app.py
 ```
 
 The application will open in your default web browser at `http://localhost:8501`.
@@ -164,7 +164,7 @@ The application will open in your default web browser at `http://localhost:8501`
 If needed, create a `.env` file in the project root with the following variables:
 
 ```
-# Add any required environment variables here
+GROQ_API_KEY
 ```
 
 ### Data Files

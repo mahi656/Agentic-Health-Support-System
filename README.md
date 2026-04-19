@@ -128,14 +128,14 @@ It is recommended to create a virtual environment to avoid dependency conflicts.
 ### On macOS/Linux:
 
 ```bash
-python3 -m venv venv
+python3.11 -m venv venv
 source venv/bin/activate
 ```
 
 ### On Windows:
 
 ```bash
-python3 -m venv venv
+python3.11 -m venv venv
 venv\Scripts\activate
 ```
 
@@ -164,7 +164,7 @@ The application will open in your default web browser at `http://localhost:8501`
 If needed, create a `.env` file in the project root with the following variables:
 
 ```
-GROQ_API_KEY
+GROQ_API_KEY = YOUR GROQ API KEY
 ```
 
 ### Data Files
